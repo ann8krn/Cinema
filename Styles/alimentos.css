@@ -1,0 +1,232 @@
+/* Reset */
+
+* {
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+p,
+ul,
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+input,
+button {
+    font-family: inherit;
+}
+button {
+    cursor: pointer;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FCFDE4;
+  }
+
+  /* Paleta de colores
+
+  Amarillo : #FBBB01
+  Azul: #05A5A1
+  Rojo: #FD001F
+  Blanco: #FCFDE4
+
+
+/* Nuevos estilos */
+ 
+h1 {
+  margin: 30px 0 30px;
+}  
+header {
+    background-color: #05A5A1;
+    color: #FBBB01;
+    text-align: center;
+    padding: 20px 0;
+   
+  }
+  .logo {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  li {
+    display: inline;
+  }
+
+  /* Navbar */
+  .menu {
+    background-color: #FCFDE4;
+    position: sticky;
+    top: 70px;
+    z-index: 1000;
+  }
+
+  /* Posicionamiento: El posicionamiento en CSS se utiliza para controlar la ubicación de un elemento en la página. */
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav ul li:last-child {
+    margin-left: auto; /* Empuja el último elemento a la izquierda */
+  }
+  nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+ 
+  nav ul li a:hover {
+    background-color: #FBBB01;
+  }
+ 
+
+  /* Contenedores comida */
+ 
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  /* La propiedad overflow controla cómo se comporta el contenido de un elemento cuando es demasiado grande para caber en su caja de contenedor.  */
+ 
+  .menu-item {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+   
+  }
+
+  /* Border-box: controla cómo se calcula el ancho y alto total de un elemento, incluyendo su relleno y borde. */
+
+  .menu-item img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border: 3px solid #FBBB01;
+  }
+
+  /* Lista de productos */
+
+  .product-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FCFDE4;
+    border-radius: 5px;
+    outline: 1px slategrey solid;
+  }
+ 
+  h3 {
+    text-align: center;
+    color: #333;
+  }
+
+ 
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-shrink: 1;
+  }
+
+  /* flex-shrink: Los elementos se reducen si es necesario */
+ 
+  label {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  /* Flex-Basis: se utiliza para establecer el tamaño base de un elemento flexible en un contenedor de diseño flexible (usando Flexbox). Indica el tamaño inicial del elemento antes de que se apliquen las propiedades flex-grow y flex-shrink */
+
+  .b1 {
+    background-color: #05A5A1;
+    color: #FCFDE4;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;    
+  }
+ 
+ 
+
+  /* Footer */
+
+  footer {
+    background-color: #FBBB01;
+    padding: 20px;
+    text-align: center;    
+  }
+  footer img {
+    max-width: 100%;
+    height: auto;
+  }
+  .footer-menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -50px;
+    margin-bottom: 50px;
+  }  
+  .footer-menu a {
+    color: #FCFDE4;
+    text-decoration: none;
+  }
+ 
+   /* Responsivo */
+
+   @media (max-width: 768px) {
+    header {
+      padding-top: 70px;
+  }
+    .menu-item {
+      width: 50%;
+    }
+   
+    .menu {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background-color: #FCFDE4;
+     
+  }
+
+  nav ul {
+      justify-content: center;
+  }
+
+  nav ul li {
+      margin: 0 5px;
+  }
+ 
+}
+ 
+ 
+  @media (max-width: 480px) {
+    .menu-item {
+      width: 100%;
+   
+}
+  }
+ 
+

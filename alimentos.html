@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú de Alimentos de Cine</title>
+<link rel="stylesheet" href="Styles/alimentos.css">
+</head>
+
+<header>
+  <h1>Alimentos Cine Patito</h1>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html">Cartelera</a></li>
+      <li><a href="#">Alimentos</a></li>
+      <li><a href="quejas.html">Contáctanos</a></li>
+    </ul>
+  </nav>    
+</header>
+
+<div class="container">
+  <div class="menu-item">
+    <img src="src/img/palomas.jpg" alt="Palomitas">
+    <h3>Palomitas</h3>
+    <p>$5</p>
+  </div>
+  <div class="menu-item">
+    <img src="/src/img/refresco.jpg" alt="Refresco">
+    <h3>Refresco</h3>
+    <p>$3</p>
+  </div>
+  <div class="menu-item">
+    <img src="/src/img/hotdogs.jpg" alt="Hot Dog">
+    <h3>Hot Dog</h3>
+    <p>$4</p>
+  </div>
+  <div class="menu-item">
+    <img src="/src/img/dulces.jpg" alt="Caramelos">
+    <h3>Caramelos</h3>
+    <p>$2</p>
+  </div>
+  <div class="menu-item">
+    <img src="/src/img/crepa.jpg" alt="Crepa">
+    <h3>Crepa</h3>
+    <p>$80</p>
+  </div>
+  <div class="menu-item">
+    <img src="/src/img/hambur.jpeg" alt="Hamburguesa">
+    <h3>Hamburguesa</h3>
+    <p>$120</p>
+  </div>
+  <div class="menu-item">
+    <img src="/src/img/helado.jpg" alt="Helado">
+    <h3>Helado</h3>
+    <p>$60</p>
+  </div>
+  <div class="menu-item">
+    <img src="/src/img/Icee.jpg" alt="Icee">
+    <h3>Icee</h3>
+    <p>$70</p>
+  </div>
+  <div class="menu-item">
+    <img src="/src/img/Nachos.jpg" alt="Nachos">
+    <h3>Nachos</h3>
+    <p>$120</p>
+  </div>
+  <div class="menu-item">
+    <img src="/src/img/boneless.jpg" alt="Boneless">
+    <h3>Boneless</h3>
+    <p>$140</p>
+  </div>
+  <div class="menu-item">
+    <img src="/src/img/pizza.jpg" alt="Pizza">
+    <h3>Pizza</h3>
+    <p>$150</p>
+  </div>
+  <div class="menu-item">
+    <img src="/src/img/mojitos.jpg" alt="Mojito">
+    <h3>Mojito</h3>
+    <p>$100</p>
+  </div>
+</div>
+
+
+<!-- Lista de productos -->
+
+<div class="product-list">
+  <h3>Carrito de Compras</h3>
+ 
+  <form>
+    <label for="product">Producto:</label>
+    <input type="text" id="product" list="products" required>
+    <datalist id="products">
+      <option value="Palomitas">
+      <option value="Refresco">
+      <option value="Hot Dog">
+      <option value="Caramelos">
+      <option value="Crepa">
+      <option value="Hamburguesa">
+      <option value="Helado">
+      <option value="Icee">
+      <option value="Nachos">
+      <option value="Boneless">
+      <option value="Pizza">
+      <option value="Mojito">
+         
+
+      <!-- Agrega más opciones según sea necesario -->
+    </datalist>
+
+    <label for="quantity">Cantidad:</label>
+    <input type="number" id="quantity" min="1" required>
+
+    <label for="price">Precio:</label>
+    <input type="text" id="price" value="$100.00">
+
+    <input class="b1" type="submit" value="Agregar al carrito"></input>
+  </form>  
+</div>
+
+<!-- Footer -->
+
+<footer>
+  <div class="logo">
+    <img src="/src/img/logoPatito.jpg" alt="Logo Cine Patito">
+  </div>
+  <div class="footer-menu">
+    <a href="#">Inicio</a>
+    <a href="#">Cartelera</a>
+    <a href="#">Alimentos</a>
+    <a href="#">Contáctanos</a>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
+
+
